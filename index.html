@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-index">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0-beta2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>Lenguaje procedimental en MySQL: procedimientos almacenados, funciones y triggers</title>
+<link rel="icon" type="image/x-icon" href="libs/favicon.ico">
+<meta name="description" content="Recurso Educativo Abierto para la unidad didáctica “Lenguaje procedimental en bases de datos” del módulo Bases de Datos de 1.º DAM. Incluye presentación del proyecto, guía didáctica, protección de datos y derechos digitales, producto final, línea temporal, recursos curados, criterios de evaluación e instrumentos de evaluación. Diseñado con enfoque DUA, metodología activa y evaluación criterial.">
+<script>document.querySelector("html").classList.add("js");</script><script src="libs/jquery/jquery.min.js"> </script><script src="libs/common_i18n.js"> </script><script src="libs/common.js"> </script><script src="libs/exe_export.js"> </script><script src="libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+<script src="idevices/text/text.js"></script><link rel="stylesheet" href="idevices/text/text.css">
+<link rel="stylesheet" href="content/css/base.css"><script src="theme/style.js"> </script><link rel="stylesheet" href="theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"> <nav id="siteNav">
+<ul>
+<li class="active"> <a href="index.html" class="active main-node no-ch">0. Portada / Bienvenida</a>
+</li>
+<li> <a href="html/1-presentacion-del-proyecto.html" class="no-ch">1. Presentación del Proyecto</a>
+</li>
+<li> <a href="html/2-guia-didactica.html" class="daddy">2. Guía Didáctica</a>
+<ul class="other-section">
+<li> <a href="html/21-descripcion-y-objetivos.html" class="no-ch">2.1 Descripción y objetivos</a>
+</li>
+<li> <a href="html/22-relacion-tareas-criterios.html" class="no-ch">2.2 Relación tareas ↔ criterios</a>
+</li>
+<li> <a href="html/23-orientaciones-metodologicas-y-dua.html" class="no-ch">2.3 Orientaciones metodológicas y DUA</a>
+</li>
+</ul>
+</li>
+<li> <a href="html/3-proteccion-de-datos-y-derechos-digitales.html" class="no-ch">3. Protección de Datos y Derechos Digitales</a>
+</li>
+<li> <a href="html/4-contenidos-y-actividades.html" class="daddy">4. Contenidos y Actividades</a>
+<ul class="other-section">
+<li> <a href="html/41-producto-final-del-alumnado.html" class="no-ch">4.1 Producto final del alumnado</a>
+</li>
+<li> <a href="html/42-organizacion-temporal.html" class="no-ch">4.2 Organización temporal</a>
+</li>
+</ul>
+</li>
+<li> <a href="html/5-recursos-y-herramientas.html" class="daddy">5. Recursos y Herramientas</a>
+<ul class="other-section">
+<li> <a href="html/51-curacion-de-contenidos-profesorado.html" class="no-ch">5.1 Curación de contenidos profesorado</a>
+</li>
+<li> <a href="html/52-curacion-de-contenidos-alumnado.html" class="no-ch">5.2 Curación de contenidos alumnado</a>
+</li>
+</ul>
+</li>
+<li> <a href="html/6-evaluacion.html" class="daddy">6. Evaluación</a>
+<ul class="other-section">
+<li> <a href="html/61-criterios-de-evaluacion.html" class="no-ch">6.1 Criterios de evaluación</a>
+</li>
+<li> <a href="html/62-instrumentos-de-evaluacion.html" class="no-ch">6.2 Instrumentos de evaluación</a>
+</li>
+</ul>
+</li>
+<li> <a href="html/7-creditos.html" class="no-ch">7. Créditos</a>
+</li>
+</ul>
+</nav><main id="7d603a60-e909-4fe6-a606-625acf202bd8" class="page"> 
+<header class="main-header">
+<div class="package-header"><h1 class="package-title">Lenguaje procedimental en MySQL: procedimientos almacenados, funciones y triggers</h1>
+<p class="package-subtitle">Módulo Bases de Datos · 1.º DAM · IES Antonio Gala</p></div>
+<div class="page-header"><h2 class="page-title">0. Portada / Bienvenida</h2></div>
+</header><div id="page-content-7d603a60-e909-4fe6-a606-625acf202bd8" class="page-content">
+<article id="block-1773514764991-s9gmf243s" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">PORTADA</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1773514764989-tw07gwqmt" class="idevice_node text" data-idevice-path="idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1773514764989-tw07gwqmt&quot;}">
+<div class="exe-text"><div class="exe-text-template">
+    <style>
+:root {
+    --primary: #00d2ff;
+    --secondary: #92fe9d;
+    --accent: #f4a326;
+    --dark-bg: #0b0e14;
+    --glass: rgba(255, 255, 255, 0.07);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --text-main: #e0e6ed;
+    --text-dim: #94a3b8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    padding: 40px;
+    margin: auto;
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 32px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.category-tag {
+    background: rgba(0, 210, 255, 0.1);
+    color: var(--primary);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 0%, #00d2ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-dim);
+    max-width: 700px;
+    margin: auto;
+}
+
+.quote-box {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid var(--primary);
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 0 16px 16px 0;
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--text-dim);
+}
+
+.nav-guide {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nav-item a {
+    display: block;
+    padding: 10px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.nav-item a:hover {
+    background: var(--primary);
+    color: #0b0e14;
+}
+
+.footer-info {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+</style>
+<div style="background: #0b0e14; padding: 40px 0; min-height: 100vh;">
+<div class="container"><header>
+<div class="category-tag">1º DAM · Bases de Datos</div>
+<h1>SQL que piensa por sí solo 🚀</h1>
+<p class="subtitle">Bienvenido al Recurso Educativo Abierto sobre Lenguaje Procedimental en MySQL.</p>
+</header>
+<div class="quote-box">“Guardar datos es solo el principio. La verdadera potencia de una base de datos aparece cuando automatizamos tareas con procedimientos, funciones y triggers.”</div>
+<section>
+<h2 style="margin-bottom: 20px;">¿Qué vas a aprender?</h2>
+<div class="grid">
+<div class="card">
+<h3>⚡ Procedimientos</h3>
+<p>Automatiza tareas repetitivas directamente en la base de datos.</p>
+</div>
+<div class="card">
+<h3>ƒ Funciones</h3>
+<p>Crea cálculos personalizados reutilizables en tus consultas.</p>
+</div>
+<div class="card">
+<h3>🎯 Triggers</h3>
+<p>Ejecuta acciones automáticas cuando ocurren cambios en los datos.</p>
+</div>
+</div>
+</section>
+<section style="margin-top: 40px;">
+<h2>Guía de Navegación</h2>
+<div class="nav-guide">
+<div class="nav-item"><a href="html/2-guia-didactica.html">📋 Guía Didáctica</a></div>
+<div class="nav-item"><a href="html/4-contenidos-y-actividades.html">🎯 Contenidos</a></div>
+<div class="nav-item"><a href="html/5-recursos-y-herramientas.html">🔍 Recursos</a></div>
+<div class="nav-item"><a href="html/6-evaluacion.html">✅ Evaluación</a></div>
+<div class="nav-item"><a href="html/7-creditos.html">⚖️ Créditos</a></div>
+</div>
+</section>
+<footer class="footer-info">
+<p><strong>Amin Harou Azouagh - IES Antonio Gala</strong></p>
+<p>Curso 2025-26 · Entorno: Docker + MySQL + phpMyAdmin</p>
+</footer></div>
+</div>
+</div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<span class="nav-button nav-button-left" aria-hidden="true"><span>Anterior</span></span>
+<a href="html/1-presentacion-del-proyecto.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">creative commons: attribution - non commercial - share alike 4.0 (BY-NC-SA)</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>
