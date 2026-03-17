@@ -7,7 +7,7 @@ Bienvenido/a al repositorio de este **Recurso Educativo Abierto (REA)**. Este pr
 
 El recurso está diseñado para ser la base del trabajo del alumnado, resultando atractivo y motivador. Su estructuración y diseño respetan los principios del **Diseño Universal para el Aprendizaje (DUA)**, garantizando la atención a la diversidad y adaptándose perfectamente a su nivel educativo.
 
-🚀 **[Acceso directo a la navegación completa del Recurso Educativo (GitHub Pages)](#)** *(Sustituir por tu enlace real)*
+🚀 **[Acceso directo a la navegación completa del Recurso Educativo ([GitHub Pages](https://aminharouedu.github.io/ud5-mysql-procedimental/))](#)** *(Sustituir por tu enlace real)*
 
 ---
 
